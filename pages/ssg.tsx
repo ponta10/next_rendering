@@ -10,7 +10,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const todos = await fetchTodos();
   return {
     props: { todos },
-    revalidate: 60,
   };
 };
 
